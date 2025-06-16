@@ -1,1 +1,10 @@
-
+import random
+def play_game():
+   choices=["rock","paper","scissor"]
+   computer_choice=random.choice(choices)
+   while True:
+        player_choice=input("type rock/paper/scissor:")
+        if player_choice in choices:
+             break
+        else:
+             print("Invalid choice")
