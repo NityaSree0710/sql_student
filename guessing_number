@@ -1,7 +1,8 @@
 import random
-comp_no=randomint(1,10)
+comp_no=random.randint(1,10)
+no_of_choice=3
 while True:
-guess_no=int(input("Enter the guess number between 1 to 10:"))
+       guess_no=int(input("Enter the guess number between 1 to 10:"))
        if  no_of_choice !=1:
            if guess_no > comp_no:
                print("Your are too high")
@@ -12,3 +13,6 @@ guess_no=int(input("Enter the guess number between 1 to 10:"))
            else:
                print("You got it")
                break
+       else:
+           print("your chances is over")
+           break
