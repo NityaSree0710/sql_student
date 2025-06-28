@@ -18,5 +18,10 @@ def play_game():
         print("You win!!")
     else:
         print("You lose!!")
-
+while True:
+    play_game()
+    ask=input("Do you want to play again?").lower()
+    if ask != "yes":
+        print("okay bye!!")
+        break
         
