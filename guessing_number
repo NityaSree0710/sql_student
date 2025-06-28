@@ -1,0 +1,14 @@
+import random
+comp_no=randomint(1,10)
+while True:
+guess_no=int(input("Enter the guess number between 1 to 10:"))
+       if  no_of_choice !=1:
+           if guess_no > comp_no:
+               print("Your are too high")
+               no_of_choice=no_of_choice-1
+           elif guess_no < comp_no:
+               print("Your are too small")
+               no_of_choice=no_of_choice-1
+           else:
+               print("You got it")
+               break
