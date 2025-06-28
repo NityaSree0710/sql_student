@@ -1,10 +1,22 @@
+name=input("Enter your name:")
+print(name + " welcome to the game")
 import random
 def play_game():
-   choices=["rock","paper","scissor"]
-   computer_choice=random.choice(choices)
-   while True:
-        player_choice=input("type rock/paper/scissor:")
+    choices=["rock", "paper", "scissor"]
+    comp_choice=random.choice(choices)
+    while True:
+        player_choice=input("Type rock/paper/scissor:").lower()
         if player_choice in choices:
-             break
+            break
         else:
-             print("Invalid choice")
+            print("Invalid Input")
+            
+    print(f'your choice {player_choice} and computer science {comp_choice}')
+    if player_choice == comp_choice:
+        print("It is a tie...")
+    elif (player_choice == "rock" and comp_choice == "scissor")or(player_choice == "paper" and comp_choice == "rock")or(player_choice == "scissor" and comp_choice == "paper"):
+        print("You win!!")
+    else:
+        print("You lose!!")
+
+        
