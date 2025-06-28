@@ -1,7 +1,10 @@
 import random
+name=input("Enter the name:")
+print(name + " welcome to the game")
 comp_no=random.randint(1,10)
 no_of_choice=3
 while True:
+   try:
        guess_no=int(input("Enter the guess number between 1 to 10:"))
        if  no_of_choice !=1:
            if guess_no > comp_no:
@@ -16,3 +19,7 @@ while True:
        else:
            print("your chances is over")
            break
+   except ValueError:
+        print("Invalid choice")
+        break
+    
